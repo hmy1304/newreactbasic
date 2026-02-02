@@ -1,0 +1,36 @@
+.container {
+  border: 2px solid #000;
+  background: aliceblue;
+}
+
+.inner {
+  display: flex;
+  gap: 10px;
+  border: 2px solid blue;
+}
+.inner2 {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  background: lightblue;
+  flex: 3;
+}
+
+header {
+  background: red;
+}
+nav {
+  background: orange;
+}
+aside {
+  flex: 1;
+  background: rgb(102, 102, 224);
+}
+.card {
+  flex: 1;
+  background: deepskyblue;
+}
+
+footer {
+  background: green;
+}
