@@ -1,0 +1,11 @@
+.container {
+  background: aliceblue;
+  border: 1px solid #000;
+}
+
+header {
+  background: rgb(193, 202, 255);
+}
+aside{
+  background: salmon;
+}
