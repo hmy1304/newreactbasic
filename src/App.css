@@ -7,11 +7,12 @@
   display: flex;
   gap: 10px;
   border: 2px solid blue;
+  padding: 10px;
 }
 .content {
   display: flex;
   gap: 10px;
-  flex: 3;
+  flex: 1;
 }
 
 header {
@@ -21,7 +22,7 @@ nav {
   background: orange;
 }
 aside {
-  flex: 1;
+  
   background: rgb(102, 102, 224);
 }
 .card {
