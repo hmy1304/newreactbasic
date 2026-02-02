@@ -8,11 +8,9 @@
   gap: 10px;
   border: 2px solid blue;
 }
-.inner2 {
+.content {
   display: flex;
   gap: 10px;
-  justify-content: space-between;
-  background: lightblue;
   flex: 3;
 }
 

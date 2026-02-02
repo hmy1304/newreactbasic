@@ -1,9 +1,12 @@
 import React from 'react'
+import Card from './Card'
 
 const Content = () => {
   return (
     <div class="content">
-        <h1>Content</h1>
+        <Card/>
+        <Card/>
+        <Card/>
     </div>
   )
 }
