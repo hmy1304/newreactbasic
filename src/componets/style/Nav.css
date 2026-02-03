@@ -1,0 +1,27 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+nav .nav-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 229, 196);
+    padding: 20px 40px;
+}
+
+nav .nav-list li:not(:last-of-type)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    margin-left: 50px;
+    background: #000;
+}

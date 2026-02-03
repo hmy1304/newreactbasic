@@ -1,0 +1,32 @@
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(81, 221, 191);
+    max-width: 100%;
+}
+
+main h1 {
+    font-size: 64px;
+}
+
+main .big-icon-wrap .mini-icon-wrap{
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+main .big-icon-wrap .mini-icon-wrap .mini-icon-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+main .big-icon-wrap .mini-icon-wrap img {
+    max-width: calc(100%/3);
+}

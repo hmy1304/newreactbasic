@@ -1,18 +1,19 @@
 import './App.css'
-import Main from './components/Main'
-import Article from './components/Article'
-import Section from './components/Section'
-import Header from './components/Header'
+import Header from './componets/Header'
+import Aside from './componets/Aside'
+import Main from './componets/Main'
+import Footer from './componets/Footer'
 
 function App() {
 
   return (
-    <div>
-      <Header/>
-      <Section/>
-      <Article/>
-      <h1>Hello React</h1>
-      <Main/>
+    <div id='container'>
+      <Header />
+      <div className="inner">
+        <Aside />
+        <Main />
+      </div>
+      <Footer />
     </div>
   )
 }
