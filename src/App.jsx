@@ -1,46 +1,38 @@
 import './App.css'
-import Button from './components/Button'
-import Main from './components/Main'
-import Section from './components/section'
-import Input from './components/Input'
+import PostItem from './components/PostItem'
+import MenuButton from './components/MenuButton'
+import InputCard from './components/InputCard'
 
 function App() {
-  const sectionData = {
-    content:"세션에 전달 되는 데이터",
-    bgcolor:"orange"
+  const menus = [
+    {id:1, label:"everyday", color:"red"},
+    {id:2, label:"cafe", color:"orange"},
+    {id:3, label:"blog", color:"blue"},
+
+  ]
+
+  const input = {
+    title:"name",
+    placeholder:"입력하시오"
   }
 
-  const handleChange=(value)=>{
-    console.log("입력중: ", value)
-  }
+  const posts = [
+    { id: 1, title: "React 시작하기", author: "홍길동" },
+    { id: 2, title: "JS 문법 정리", author: "김철수" },
+    { id: 3, title: "CSS 레이아웃", author: "이영희" },
+  ]
 
   return (
     <div>
-      <Input 
-      inputValue={"hello react"}
-      title={"input title"}
-      placeholder={"입력하세요"}
-      onChange={handleChange}
-      />
-      <hr/>
-      {/* <Section data={sectionData}/> */}
-      <Section {...sectionData}/>
-      <hr/>
-      <Main content={"메인 영역입니다.1"} bgcolor={"lightblue"} />
-      <Main content={"메인 영역입니다.2"} bgcolor={"lightblue"} />
-      <Main bgcolor={"lightblue"}/>
-      <hr/>
-      <Button text={"메일"}  color={"red"}>
-        <span>자식요소 red</span>
-      </Button>
-      <Button text={"카페"} color={"blue"}>
-        <span>자식요소 blue</span>
-      </Button>
-      <Button text={"블로그"} color={"green"}>
-        <span>자식요소 green</span>
-      </Button>
-      <Button text={"블로그"}/>
-      <h1>Hello React</h1>
+      <h1>메뉴</h1>
+      {menus.map((menu) => (
+        <MenuButton key={menu.id} {...menu}/>
+      ))}
+      <InputCard {...input}/>
+      <h1>게시글</h1>
+      {posts.map((post) => (
+        <PostItem key={post.id} {...post}/>
+      ))}
     </div>
   )
 }
