@@ -1,16 +1,22 @@
-import './App.css'
-import Squarecalc from './components/squarecalc'
-import SortableList from './components/SortableList'
-import PeopleList from './components/PeopleList'
+import React, {useState,useEffect} from 'react'
+import UserList from './components/UserList'
+import PostList from './components/PostList'
+import UserDetail from './components/UserDetail'
+import DummyJason from './components/DummyJason'
+import UserTest from './components/UserTest'
 
-function App() {
+const App = () => {
+  
 
   return (
-    <>
-      <PeopleList />
-      <SortableList />
-      <Squarecalc />
-    </>
+    <div>
+      <h1>axios</h1>
+      <UserTest />
+      {/* <DummyJason /> */}
+      {/* <UserDetail /> */}
+      {/* <PostList /> */}
+      {/* <UserList /> */}
+    </div>
   )
 }
 
