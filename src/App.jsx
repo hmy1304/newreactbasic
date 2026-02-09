@@ -1,13 +1,16 @@
-import React, {useState} from 'react'
-import Parent from './components/Parent'
+import './App.css'
+import Squarecalc from './components/squarecalc'
+import SortableList from './components/SortableList'
+import PeopleList from './components/PeopleList'
 
-const App = () => {
-  
+function App() {
 
   return (
-    <div>
-      <Parent />
-    </div>
+    <>
+      <PeopleList />
+      <SortableList />
+      <Squarecalc />
+    </>
   )
 }
 
